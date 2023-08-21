@@ -17,7 +17,11 @@ function setup() {
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine); 
-    ground = Bodies.rectangle(200, height, width, 10);    
+    var options = {
+        isStatic: true
+    }
+    ground = Bodies.rectangle(200, height, width, 10, options); 
+    World.add(world, ground);   
 }
 
 function mousePressed() {
