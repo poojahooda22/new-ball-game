@@ -10,6 +10,9 @@ function Box (x, y, w, h) {
 
         push();
         translate(pos.x, pos.y);
+        rotate(angle);
+        rectMode(CENTER);
+        
         rect(0, 0, this.w, this.h);
 
         pop();
