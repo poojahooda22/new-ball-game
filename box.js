@@ -1,6 +1,6 @@
 function Box (x, y, w, h) {
     this.body= Bodies.rectangle(x, y, w, h);
-    this.body.friction = 0;
+    this.body.friction = 1;
     this.w = w;
     this.h = h;
     World.add(world, this.body);
