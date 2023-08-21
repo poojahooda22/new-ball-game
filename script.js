@@ -36,4 +36,8 @@ function draw() {
     }
 
     fill( 137, 207, 240);
+    noStroke();
+    rectMode(CENTER);
+    rect(600, height, width, 10);
+
 }
