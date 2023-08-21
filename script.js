@@ -20,17 +20,20 @@ function setup() {
     var options = {
         isStatic: true
     }
-    ground = Bodies.rectangle(200, height, width, 10, options); 
+    ground = Bodies.rectangle(600, height, width, 10, options); 
     World.add(world, ground);   
 }
 
-function mousePressed() {
+function mouseDragged() {
     boxes.push(new Box(mouseX, mouseY, 30, 30));
 }
 
 function draw() {
     background(0);
+    
     for(var i = 0; i < boxes.length; i++) {
         boxes[i].show();
     }
+
+    fill( 137, 207, 240);
 }
