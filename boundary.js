@@ -23,10 +23,8 @@ function Boundary (x, y, w, h, a) {
         rotate(angle);
         rectMode(CENTER);
         stroke(0);
-       
-
+        fill(0)
         rect(0, 0, this.w, this.h);
-
         pop();
 
     }
