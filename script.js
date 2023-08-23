@@ -30,13 +30,14 @@ function setup() {
     // World.add(world, ground);   
 }
 
-function mouseDragged() {
-    circles.push(new Circle(mouseX, mouseY, 30));
-}
+// function mouseDragged() {
+//     circles.push(new Circle(mouseX, mouseY, 30));
+// }
 
 function draw() {
     background(255);
     Engine.update(engine);
+    circles.push(new Circle(200, 40, 30));
     for(var i = 0; i < circles.length; i++) {
         circles[i].show();
     }
