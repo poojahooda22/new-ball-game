@@ -7,9 +7,7 @@ function Circle (x, y, r) {
     }
 
     this.body= Bodies.circle(x, y, r, options);
-    
     this.r = r;
-    
     World.add(world, this.body);
 
     this.show = function() {
