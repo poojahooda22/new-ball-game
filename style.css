@@ -5,13 +5,17 @@
     
 }
 
+.heading {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
 h2 {
     font-size: 2rem;
     font-weight: 600;
     color: #333;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
